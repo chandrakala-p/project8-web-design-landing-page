@@ -4,11 +4,12 @@
     font-family: "Roboto";
 
 }
-body div.main-div{
-  
-        /* clip-path: polygon(25% 0%, 100% 0, 100% 56%, 62% 74%, 0 39%, 0 0); */
-        /* width: 700px; */
-       
+
+body div.main-div {
+
+    /* clip-path: polygon(25% 0%, 100% 0, 100% 56%, 62% 74%, 0 39%, 0 0); */
+    /* width: 700px; */
+
 }
 
 nav {
@@ -39,7 +40,7 @@ nav img {
     padding-right: 200px;
 }
 
-.signin-btn{
+.signin-btn {
     padding: 5px 20px;
     font-size: 15px;
     border-radius: 20px;
@@ -49,66 +50,117 @@ nav img {
 
 }
 
-.intro-section{
+.intro-section {
     display: flex;
-   
+
 }
 
-.left-section{
+.left-section {
     padding-left: 10px;
 }
-.left-section h1{
+
+.left-section h1 {
     padding-top: 140px;
     font-size: 70px;
     color: rgb(68, 66, 121);
 }
-.left-section h4{
+
+.left-section h4 {
     padding-top: 50px;
     font-weight: normal;
     margin-right: 1000px;
     color: #353b35c2;
     font-size: 15px;
-    
+
 }
-.learn-more-btn{
+
+.learn-more-btn {
     padding: 10px 40px;
     /* background-color:  */
     margin-top: 50px;
     border-radius: 20px;
     font-size: 20px;
     background: linear-gradient(90deg, #6d1175d2 0%, #df0fce9c 100%);
-        border: 1px solid #ffffff;
-        color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 
-.vector-dot+img{
+.vector-dot+img {
     width: 750px;
     height: 700px;
     margin-top: 50px;
     position: absolute;
-    top:20px;
-    right:220px;
+    top: 20px;
+    right: 220px;
 }
-.vector-img{
+
+.vector-img {
     position: absolute;
     bottom: -50px;
     left: 20px
 }
 
-.vector-dot{
+.vector-dot {
     position: absolute;
     bottom: 40px;
-    left:70px;
+    left: 70px;
 }
-.imgs-div{
+
+.imgs-div {
     background-image: url('/images/backcover.svg');
-         height: 100vh; 
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        right: 0px;
-        top:0px;
-        width: 70%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 70%;
+
+}
+
+@media only screen and (min-width: 370px) and (max-width: 600px) {
+    body {
+        overflow: hidden !important;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    nav {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgs-div {
+        height: 70vh;
+    }
+
+    .left-section {
+        text-align: center;
+        width: 80%;
+    }
+
+    .left-section h1 {
+        padding-top: 70px;
+        font-size: 50px;
+    }
+
+    .left-section h4 {
+        padding: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .vector-img .vector-dot {
+        display: none;
+    }
+
+    .vector-dot+img {
+        display: none;
+    }
+
 
 }
