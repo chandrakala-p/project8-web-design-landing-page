@@ -119,7 +119,7 @@ nav img {
 
 }
 
-@media only screen and (min-width: 370px) and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     body {
         overflow: hidden !important;
     }
@@ -132,6 +132,8 @@ nav img {
         padding-top: 30px;
         display: flex;
         justify-content: space-around;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .imgs-div {
@@ -140,7 +142,12 @@ nav img {
 
     .left-section {
         text-align: center;
-        width: 80%;
+        padding-left: 60px;
+        padding-right: 30px;
+
+        width: 70%;
+        margin-right: 0;
+
     }
 
     .left-section h1 {
@@ -161,6 +168,8 @@ nav img {
     .vector-dot+img {
         display: none;
     }
+
+
 
 
 }
